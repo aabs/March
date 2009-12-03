@@ -1,0 +1,22 @@
+﻿architecture
+{
+    author: "Andrew Matthews";
+    date: 2009-03-21;
+    version: "3.1.3";
+    notes:  "this is an architecture description designed to exercise the constrained dotted identifier";
+}
+
+network SomeNetwork
+{
+	server ServerWithFeatures
+	{
+		features
+		{
+			SomeApp.SubApp1[SomeProperty == <config>.<"/Some/Xpath/Query"> ~=  "SomeValue"]; // Any version of SubApp1 that defines config that contains "SomeValue"
+            SomeApp[Version == "3.0.65"].Service
+            {
+				SomeVar = 12;
+            };
+		}
+	}
+}

@@ -1,0 +1,303 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer>
+      <setting name="UsedSolutionBuilderID">0</setting>
+    </integer>
+    <boolean>
+      <setting name="livetemplates.csharp.usevar">True</setting>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="BC494A96-696E-46A5-A055-9C797FC07DC4/f:Tuples.cs" caret="213" fromTop="5" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:DebugWriter.cs" caret="99" fromTop="5" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:ArtefactWithPropDef.txt" caret="176" fromTop="5" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/f:DomainModel.cs" caret="4430" fromTop="5" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:BaseNode.cs" caret="208" fromTop="5" />
+      <File id="BC494A96-696E-46A5-A055-9C797FC07DC4/f:Logger.cs" caret="3838" fromTop="5" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:sample-input.txt" caret="1027" fromTop="5" />
+      <File id="d:Miscellaneous Files/f:test2.txt" caret="637" fromTop="40" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:INode.cs" caret="147" fromTop="6" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:ModelBuilder.cs" caret="978" fromTop="29" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:App.config" caret="2370" fromTop="48" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:test2.txt" caret="196" fromTop="8" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:MGraphXamlReader.cs" caret="9328" fromTop="28" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:test3.txt" caret="291" fromTop="14" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:DynamicParserExtensions.cs" caret="2560" fromTop="28" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:arch.mg" caret="10454" fromTop="32" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.txt" caret="413" fromTop="15" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Visitor/f:IVisitable.cs" caret="121" fromTop="6" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:Ast.cs" caret="8470" fromTop="22" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Visitor/f:IVisitor.cs" caret="1672" fromTop="40" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:MyErrorReporter.cs" caret="473" fromTop="15" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.march" caret="2052" fromTop="59" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="899" fromTop="27" />
+      <File id="A0D4F682-8E3A-4C6A-ABD1-476060E50B75/f:Program.cs" caret="860" fromTop="27" />
+      <File id="A0D4F682-8E3A-4C6A-ABD1-476060E50B75/f:DCL.t4.txt" caret="1203" fromTop="34" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.txt" caret="1176" fromTop="22" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.txt" caret="1615" fromTop="0" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.txt" caret="2447" fromTop="24" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.txt" caret="557" fromTop="27" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.txt" caret="717" fromTop="39" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.txt" caret="1870" fromTop="43" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.txt" caret="7034" fromTop="56" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="1639" fromTop="19" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.txt" caret="382" fromTop="15" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Visitor/f:IVisitor.cs" caret="142" fromTop="7" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="739" fromTop="23" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.march" caret="450" fromTop="11" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.march" caret="1296" fromTop="54" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.march" caret="704" fromTop="27" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.march" caret="939" fromTop="40" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.march" caret="1181" fromTop="52" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.march" caret="1355" fromTop="47" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.march" caret="1473" fromTop="54" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.march" caret="1806" fromTop="47" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.march" caret="1756" fromTop="42" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.march" caret="2038" fromTop="56" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="1185" fromTop="30" />
+      <File id="A0D4F682-8E3A-4C6A-ABD1-476060E50B75/f:Program.cs" caret="1052" fromTop="21" />
+      <File id="A0D4F682-8E3A-4C6A-ABD1-476060E50B75/f:Program.cs" caret="2085" fromTop="24" />
+      <File id="A0D4F682-8E3A-4C6A-ABD1-476060E50B75/f:Program.cs" caret="73" fromTop="0" />
+      <File id="A0D4F682-8E3A-4C6A-ABD1-476060E50B75/f:Program.cs" caret="524" fromTop="13" />
+      <File id="A0D4F682-8E3A-4C6A-ABD1-476060E50B75/f:Program.cs" caret="770" fromTop="23" />
+      <File id="A0D4F682-8E3A-4C6A-ABD1-476060E50B75/f:DCL.t4.txt" caret="1203" fromTop="34" />
+      <File id="A0D4F682-8E3A-4C6A-ABD1-476060E50B75/f:DCL.t4.txt" caret="997" fromTop="27" />
+      <File id="A0D4F682-8E3A-4C6A-ABD1-476060E50B75/f:Program.cs" caret="789" fromTop="26" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="14" />
+      <Item value="IComparable" priority="0" />
+      <Item value="PropertyDefinition" priority="1" />
+      <Item value="" priority="1" />
+      <Item value="Name" priority="0" />
+      <Item value="GraphBuilder" priority="1" />
+      <Item value="DefaultConstraint" priority="2" />
+      <Item value="PropertyType" priority="3" />
+      <Item value="AcceptableTypes" priority="0" />
+      <Item value="NotImplementedException" priority="0" />
+      <Item value="b" priority="0" />
+      <Item value="Artefact" priority="0" />
+      <Item value="PropertyDefinitions" priority="0" />
+      <Item value="List" priority="2" />
+      <Item value="Dataflow" priority="0" />
+      <Item value="Identifier" priority="2" />
+      <Item value="Console" priority="1" />
+      <Item value="LogWriter" priority="0" />
+      <Item value="StringWriter" priority="1" />
+      <Item value="StringBuilder" priority="1" />
+      <Item value="XamlWriterSettings" priority="0" />
+      <Item value="DomainModel" priority="0" />
+      <Item value="Ast" priority="0" />
+      <Item value="Architecture" priority="6" />
+      <Item value="errorReporter" priority="0" />
+      <Item value="ErrorReporter" priority="3" />
+      <Item value="ApplicationException" priority="1" />
+      <Item value="CreateLambda" priority="0" />
+      <Item value="Dictionary&lt;string,Type&gt;" priority="0" />
+      <Item value="Builder" priority="0" />
+      <Item value="return" priority="3" />
+      <Item value="sequenceElement" priority="0" />
+      <Item value="StreamReader" priority="0" />
+      <Item value="Dictionary&lt;Identifier,Type&gt;" priority="0" />
+      <Item value="Pair&lt;XNamespace,string&gt;" priority="0" />
+      <Item value="xamlMap" priority="0" />
+      <Item value="List&lt;Import&gt;" priority="0" />
+      <Item value="List&lt;Definition&gt;" priority="0" />
+      <Item value="List&lt;Artefact&gt;" priority="1" />
+      <Item value="List&lt;string&gt;" priority="5" />
+      <Item value="List&lt;PropertyDefinition&gt;" priority="1" />
+      <Item value="ConstrainedTo" priority="0" />
+      <Item value="List&lt;PropertyDeclaration&gt;" priority="1" />
+      <Item value="List&lt;Application&gt;" priority="0" />
+      <Item value="CrossAppDomainDelegate" priority="0" />
+      <Item value="Application" priority="0" />
+      <Item value="string" priority="5" />
+      <Item value="DebuggerTypeProxyAttribute" priority="0" />
+      <Item value="arch" priority="1" />
+      <Item value="class" priority="2" />
+      <Item value="ctor" priority="3" />
+      <Item value="private" priority="1" />
+      <Item value="static" priority="3" />
+      <Item value="ModelParser" priority="2" />
+      <Item value="null" priority="0" />
+      <Item value="SourcePath" priority="2" />
+      <Item value="e" priority="0" />
+      <Item value="parser" priority="4" />
+      <Item value="new" priority="11" />
+      <Item value="bool" priority="0" />
+      <Item value="Debug" priority="1" />
+      <Item value="readonly" priority="1" />
+      <Item value="Logger" priority="2" />
+      <Item value="typeof" priority="1" />
+      <Item value="ExceptionErrorReporter" priority="0" />
+      <Item value="errorInformation" priority="7" />
+      <Item value="var" priority="4" />
+      <Item value="int" priority="0" />
+      <Item value="File" priority="0" />
+      <Item value="FileInfo" priority="0" />
+      <Item value="if" priority="2" />
+      <Item value="result" priority="0" />
+      <Item value="Parser" priority="1" />
+      <Item value="ErrorInformation" priority="0" />
+      <Item value="List&lt;ErrorInformation&gt;" priority="0" />
+      <Item value="Errors" priority="0" />
+      <Item value="TextWriter" priority="0" />
+      <Item value="foreach" priority="0" />
+      <Item value="error" priority="0" />
+      <Item value="MyErrorReporter" priority="4" />
+      <Item value="sb" priority="0" />
+      <Item value="parsingWasSuccessful" priority="1" />
+      <Item value="Server" priority="0" />
+      <Item value="Options" priority="3" />
+      <Item value="options" priority="0" />
+      <Item value="switch" priority="0" />
+      <Item value="args" priority="0" />
+      <Item value="case" priority="0" />
+      <Item value="break" priority="1" />
+      <Item value="default" priority="0" />
+      <Item value="cw" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Dataflow.GraphBuilder">
+      <Item value="GetEntityLabel" priority="0" />
+      <Item value="GetSuccessors" priority="1" />
+      <Item value="TestLabel" priority="1" />
+      <Item value="GetSingleByLabel" priority="4" />
+      <Item value="ForEachSuccessor" priority="0" />
+      <Item value="VisitArtefacts" priority="0" />
+      <Item value="GetSequenceElements" priority="1" />
+      <Item value="IsEntity" priority="0" />
+      <Item value="IsNode" priority="0" />
+      <Item value="IsSequence" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString" priority="1" />
+      <Item value="GetType" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Where" priority="1" />
+      <Item value="SingleOrDefault" priority="0" />
+      <Item value="Cast" priority="0" />
+      <Item value="ForEach" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DomainModel.PropertyType">
+      <Item value="ObjectReference" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Debug">
+      <Item value="Assert" priority="3" />
+      <Item value="WriteLineIf" priority="0" />
+      <Item value="WriteLine" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="TrimQuotes" priority="0" />
+      <Item value="ToLowerInvariant" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ast.Visitor.IAstVisitor">
+      <Item value="CaseIdentifier" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="Assembly" priority="4" />
+      <Item value="Name" priority="1" />
+      <Item value="Namespace" priority="1" />
+      <Item value="GetNamespaceUrl" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="Out" priority="1" />
+      <Item value="ReadKey" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@log4net.Config.XmlConfigurator">
+      <Item value="Configure" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Common.Logger">
+      <Item value="Debug" priority="1" />
+      <Item value="Info" priority="0" />
+      <Item value="Dump" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="ToString" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Xml.Linq.XDocument">
+      <Item value="Parse" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Linq.XDocument">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Dataflow.DynamicParser">
+      <Item value="Parse" priority="1" />
+      <Item value="Parser" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Dataflow.ErrorReporter">
+      <Item value="Standard" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.Dictionary`2">
+      <Item value="ContainsKey" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.FileInfo">
+      <Item value="OpenRead" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.IO.File">
+      <Item value="ReadAllText" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.List`1">
+      <Item value="Add" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Reflection.Assembly">
+      <Item value="FullName" priority="0" />
+      <Item value="ImageRuntimeVersion" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:arch.ModelParser">
+      <Item value="Parse" priority="0" />
+      <Item value="Parser" priority="0" />
+      <Item value="err" priority="0" />
+      <Item value="Architecture" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Dataflow.ErrorInformation">
+      <Item value="Message" priority="2" />
+      <Item value="Location" priority="5" />
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Dataflow.Parser">
+      <Item value="ErrorRecoverer" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.IO.TextWriter">
+      <Item value="Close" priority="0" />
+      <Item value="Write" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Dataflow.ISourceLocation">
+      <Item value="Span" priority="1" />
+      <Item value="FileName" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Dataflow.SourceSpan">
+      <Item value="ToString" priority="0" />
+      <Item value="Start" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Dataflow.SourcePoint">
+      <Item value="Line" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:arch.MyErrorReporter">
+      <Item value="ErrorCount" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:March.Options">
+      <Item value="ProcessArgs" priority="0" />
+      <Item value="ArchPath" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <UnitTestRunnerMSTest>
+    <UseTestRunConfigFromMetadataFile>False</UseTestRunConfigFromMetadataFile>
+  </UnitTestRunnerMSTest>
+</Configuration>

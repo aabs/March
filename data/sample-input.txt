@@ -1,0 +1,251 @@
+﻿architecture
+{
+    author: "Andrew Matthews";
+    date: 2009-03-21;
+    version:"3.1.3";
+    notes: "this is an architecture description designed to exercise the parser in all ways";
+}
+
+use "Features.Net35Sp1";
+
+define Path @"C:\shared.datastore\repository\public\premier\AgentDesktop3.0\trunk";
+
+artefact Database
+{
+	creator : reference
+		where creator : Executable;
+
+	connectionString:		string;
+
+	connectionType:			string 
+		default : "System.Data.SqlClient";
+
+	schema : string
+		where creator : Executable
+		default: "dbo";
+
+}
+
+artefact SqlServerDatabase : Database, ThirdPartyProduct, SelfInstalling
+{
+	artefact SomeSubComponent
+	{
+		prop1:int;
+		prop2:string;
+
+		artefact SomeSubSubComponent
+		{
+			prop1:int;
+			prop2:string;
+		}
+	}
+}
+
+enum DeploymentContext
+{
+	Development,
+	Staging,
+	UAT,
+	Production
+}
+
+application AgentDesktop
+{
+
+	Version = "3.0.65";
+
+	assembly No_Bases_No_Properties{}
+    
+	assembly OneBase : PerfCounterProvider{}
+	assembly TwoBases : Base1, Base2{}
+	assembly ThreeBases : Base1, Base2, Base3{}
+
+	application HavingOneRequirement
+	{
+		requires 
+		{
+			Requirement.One
+		}
+	}
+
+	application HavingTwoRequirements
+	{
+		requires 
+		{
+			Requirement.One, Requirement.Two
+		}
+	}
+
+	application HavingThreeRequirements
+	{
+		requires 
+		{
+			Requirement.One, Requirement.Two, Requirement.Three
+		}
+	}
+
+	application HavingOnePropertyDefinition
+	{
+        PropName = Some.Dotted.Identifier;
+	}
+
+	application HavingMultiplePropertyDefinitions
+	{
+        PropName = Some.Dotted.Identifier; // reference
+        PropName2 = @"c:\A\Path\perhaps.txt"; // string literal
+        PropName3 = 34; // integer
+        PropName4 = 34.5; // float/double 
+        PropName5 = 34.5e6; // scientific
+        PropName6 = true; // boolean
+        PropName7 = 2009-03-20T07:32:00+10; // dates
+        PropName8 = PropName3 + (6.4E10 / PropName5); // expressions
+	}
+
+    database DB_No_Bases_No_Properties{}
+
+	database DBOneBase : PerfCounterProvider{}
+    
+	database DBTwoBases : Base1, Base2{}
+    
+	database DBThreeBases : Base1, Base2, Base3 {}
+
+	database DBHavingOneRequirement
+    {
+		x = y;
+		requires 
+		{
+			Requirement.One
+		}
+	}
+  
+
+	database DBHavingTwoRequirements
+	{
+		requires 
+		{
+			Requirement.One, Requirement.Two
+		}
+	}
+
+	database DBHavingThreeRequirements
+	{
+		requires 
+		{
+			Requirement.One, Requirement.Two, Requirement.Three
+		}
+	}
+
+	database DBHavingOnePropertyDefinition
+	{
+        PropName = Some.Dotted.Identifier;
+	}
+
+	database DBHavingMultiplePropertyDefinitions
+	{
+        PropName = Some.Dotted.Identifier; // reference
+        PropName2 = @"c:\A\Path\perhaps.txt"; // string literal
+        PropName3 = 34; // integer
+        PropName4 = 34.5; // float/double 
+        PropName5 = 34.5e6; // scientific
+        PropName6 = true; // boolean
+        PropName7 = 2009-03-20T07:32:09+10; // dates
+        PropName8 = PropName3 + (6.4E10 / PropName5); // expressions
+	}
+}
+    
+network SomeNetwork
+{
+
+    // a bunch of properties defining the network
+    PropName = Some.Dotted.Identifier; // reference
+    PropName2 = @"c:\A\Path\perhaps.txt"; // string literal
+    PropName3 = 34; // integer
+    PropName4 = 34.5; // float/double 
+    PropName5 = 34.5e6; // scientific
+    PropName6 = true; // boolean
+    PropName7 = 2009-03-20T07:32:09+10; // dates
+    PropName8 = PropName3 + (6.4E10 / PropName5); // expressions
+
+    // some servers
+    server BareServer{}
+    server ServerOneBase : Base1 {}
+    server ServerMultiBase : Base1,Base2,Base3 {}
+    server ServerWithProperties
+    {
+        PropName = Some.Dotted.Identifier; // reference
+        PropName2 = @"c:\A\Path\perhaps.txt"; // string literal
+        PropName3 = 34; // integer
+        PropName4 = 34.5; // float/double 
+        PropName5 = 34.5e6; // scientific
+        PropName6 = true; // boolean
+        PropName7 = 2009-03-20T07:32:09+10; // dates
+        PropName8 = PropName3 + (6.4E10 / PropName5); // expressions
+    }
+
+	server ServerWithFeatures
+	{
+		features
+		{
+			SomeApp.Web; //  unconstrained feature (any instance will do)
+			SomeApp[Version == "3.0.65"].Service1; // Whatever service that is defined for Version "3.0.65" of SomeApp
+			SomeApp.SubApp1[<config>.<"/Some/Xpath/Query"> ~=  "SomeValue"]; // Any version of SubApp1 that defines config that contains "SomeValue"
+			SomeApp.SubApp1[<config>.<"/Some/Xpath/Query"> ~!= "SomeValue"]; // Any version of SubApp1 that defines config that doesn't contain "SomeValue"
+			SomeApp.SubApp1[<config>.<"/Some/Xpath/Query"> ==   "SomeValue"]; // Query must equal "SomeValue"
+			SomeApp.SubApp1[<config>.<"/Some/Xpath/Query"> !=  "SomeValue"]; // Query must not equal "SomeValue"
+			SomeApp.SubApp1[(<config>.<"/Some/Xpath/Query"> !=  "SomeValue")]; // Query must not equal "SomeValue"
+			SomeApp.SubApp1
+                [(<config>.<"/Some/Xpath/Query"> !=  "SomeValue") &&
+                 (<config>.<"/Some/Xpath/Query"> !=  "SomeValue")].SubSubApp[Version == "3.1.5"]; // expression language
+		}
+	}
+
+	server WithApplicationInstanceContainingOverrides
+	{
+		features
+		{
+            Application1
+            {
+                PropName = Some.Dotted.Identifier; // reference
+                PropName2 = @"c:\A\Path\perhaps.txt"; // string literal
+                PropName3 = 34; // integer
+                PropName4 = 34.5; // float/double 
+                PropName5 = 34.5e6; // scientific
+                PropName6 = true; // boolean
+                PropName7 = 2009-03-20T07:32:09+10; // dates
+                PropName8 = PropName3 + (6.4E10 / PropName5); // expressions
+            };
+		}
+	}
+
+	server WithConstrainedApplicationInstanceContainingOverrides
+	{
+		features
+		{
+            SomeApp[Version == "3.0.65"].Service1
+            {
+                PropName = Some.Dotted.Identifier; // reference
+                PropName2 = @"c:\A\Path\perhaps.txt"; // string literal
+                PropName3 = 34; // integer
+                PropName4 = 34.5; // float/double 
+                PropName5 = 34.5e6; // scientific
+                PropName6 = true; // boolean
+                PropName7 = 2009-03-20T07:32:09+10; // dates
+                PropName8 = PropName3 + (6.4E10 / PropName5); // expressions
+            };
+            
+			SomeApp.SubApp1
+                [(<config>.<"/Some/Xpath/Query"> !=  "SomeValue") &&
+                 (<config>.<"/Some/Xpath/Query"> !=  "SomeValue")].SubSubApp[Version == "3.1.5"] // expression language
+            {
+                PropName = Some.Dotted.Identifier; // reference
+                PropName2 = @"c:\A\Path\perhaps.txt"; // string literal
+                PropName3 = 34; // integer
+                PropName4 = 34.5; // float/double 
+                PropName5 = 34.5e6; // scientific
+                PropName6 = true; // boolean
+                PropName7 = 2009-03-20T07:32:09+10; // dates
+                PropName8 = PropName3 + (6.4E10 / PropName5); // expressions
+            };
+		}
+	}    
+} // end of network SomeNetwork

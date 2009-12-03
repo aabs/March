@@ -1,0 +1,55 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ output extension=".txt" #>
+<#@ assembly name="System.Xml.dll" #>
+<#@ assembly name="System.Core.dll" #>
+<#@ assembly name="CodeGenHelpers.dll" #>
+<#@ assembly name="System.Dataflow.dll" #>
+<#@ import namespace="System.Xml" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="CodeGenHelpers" #>
+<#@ import namespace="arch" #>
+<#@ import namespace="System.Collections.Generic" #>
+
+<#
+
+	OptionsDto options;
+	using(var fs = new FileInfo("opt.txt").OpenText())
+	{
+		options = CodeGenHelpers.CodeGenHelper.GetObjectFromFile<OptionsDto>(fs);
+	}
+	
+    var parser = new ModelParser(options.ArchPath);
+    bool parsingWasSuccessful = parser.Parse();
+    var arch = parser.Architecture;
+	
+	if (!parsingWasSuccessful)
+    {
+        #>
+		<#= options.ArchPath #> Failed.
+		<#
+    } 
+#>
+
+Servers
+=======
+<#
+foreach(var s in arch.AllServers()){
+#>
+	<#= s.Name #>
+<#
+
+	foreach(var appInst in s.Features){#>
+		<#= appInst.Name.ProperName#>	
+<#	}// end for each app inst
+
+
+}#>
+
+Artefacts
+=======
+<#
+foreach(var s in arch.Artefacts){
+#>
+	<#= s.ProperName #>
+<#}#>

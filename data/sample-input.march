@@ -1,0 +1,130 @@
+architecture
+{
+    author: "Andrew Matthews";
+    date: 2009-05-18;
+    version:"1.0.1";
+    notes: "A simple Hello World example of a March file";
+}
+
+use "Features.Net35Sp1";
+
+define Path @"C:\Program Files(x86)\Hello World";
+
+artefact AspNet35WebApplication : Common.AspNetApplication
+{
+	Version : string;
+	VDir: string;
+	AppPoolIdentity: string;
+}
+
+artefact AppSupportingLogging : Common.DotNetAssembly
+{
+	LogFileName: string;
+	LogFramework: string;
+	LogDir: string;
+}
+
+artefact IllegalArtefact1Container
+{
+	// should evoke an error at compile time due to the fact that it derives from an artefact that it is a part of.
+	// the russell paradox? (the set of all artefacts that are parts of themselves)
+	artefact IllegalArtefact1 : IllegalArtefact1Container
+	{
+	}
+}
+artefact CompoundArtefact : AppSupportingLogging
+{
+	artefact SomeSubComponent
+	{
+		prop1:int;
+		prop2:string;
+
+		artefact SomeSubSubComponent
+		{
+			prop1:int;
+			prop2:string;
+		}
+	}
+}
+
+enum DeploymentType
+{
+	Development,
+	Test,
+	UAT,
+	Production
+}
+
+artefact MyApptype
+{
+	InstallationType: reference
+		where InstallationType:DeploymentType
+		default: "DeploymentType.Development";
+}
+
+application HelloWorld
+{
+	Version = "1.1.0";
+
+	application HelloService : Common.WindowsService, AppSupportingLogging, MyApptype
+	{
+		Version = "0.0.9";
+		ServiceName = "Hello World Service";
+		ServiceIdentity = "SomeDomain\\SomeUser";
+		ResumeOnFailure = true;
+		RestartAfterMs = 0;
+		LogFramework = "Log4Net";
+		LogDir = @"c:\MyLogs";
+		LogFileName = "HelloSvc.log";
+	}
+
+	application HelloWorldWeb : AspNet35WebApplication, MyApptype
+	{
+		StandardGreeting:string;
+
+		Version = "1.0.1";
+		VDir = "Hello World";
+		AppPoolIdentity = "SomeDomain\\SomeUser";
+
+		requires
+		{
+			HelloService
+		}
+	}
+}
+
+network MyGrid
+{
+	AddressRange = "12.13.14.*";
+	DCAddress = "12.13.14.15";
+
+	server GridTestSvr1
+	{
+		Address = "12.13.14.16";
+		Name = "Web Server 1";
+
+		features
+		{
+			HelloWorld[Version == "1.1.0"].HelloWorldWeb
+			{
+				InstallationType = DeploymentType.UAT;
+				StandardGreeting = <config>.<"/Some/XPath/Query/In/Web.config">;
+				InstallationPath = @"c:\Inetpub\wwwroot\HelloWorldWeb";
+			};
+		}
+	}
+	server GridTestSvr2
+	{
+		Address = "12.13.14.17";
+		Name = "Do It Machine";
+
+		features
+		{
+			HelloWorld[Version ~= "^1.1"].HelloService[Version == "0.0.9"]
+			{
+				InstallationType = DeploymentType.UAT;
+				InstallationPath = @"${Path}\HelloService";
+			};
+		}
+	}
+}

@@ -1,0 +1,13 @@
+architecture
+{
+    author: "Andrew Matthews";
+    date: 2009-04-04;
+    version:"0.0.1";
+    notes: "this is a test data spec to allow testing of property definitions";
+}
+
+artefact SomeArtefact
+{
+	PropDef1 : string
+		default:"propdef1 value";
+}

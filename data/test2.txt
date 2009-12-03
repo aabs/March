@@ -1,0 +1,42 @@
+﻿architecture
+{
+    author: "Andrew Matthews";
+    date: 2009-03-21;
+    version: "3.1.3";
+    notes:  "this is an architecture description designed to exercise the parser in all ways";
+}
+
+use "something";
+use "somethingElse";
+
+define X "something";
+
+artefact A1 : Base1, Base2
+{
+	Prop1 : int ;
+	Prop2 : real ;
+	Prop3 : date ;
+	Prop4 : duration ;
+	Prop5 : guid ;
+	Prop6 : string ;
+	Prop7 : blob ;
+	Prop8 : reference ;
+	creator : reference
+		where creator : Common.Executable
+		default : "some.value";
+}
+artefact A2
+{
+	artefact A21{}
+}
+
+enum Enum1
+{
+	val1,val2
+}
+
+application App1 : A1, A2
+{
+	Prop1 = 12;	
+}
+

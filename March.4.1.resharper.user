@@ -1,0 +1,163 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer>
+      <setting name="UsedSolutionBuilderID">0</setting>
+    </integer>
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="BC494A96-696E-46A5-A055-9C797FC07DC4/f:Tuples.cs" caret="213" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:DebugWriter.cs" caret="99" scrollPosition="0|0" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:sample-input.txt" caret="384" scrollPosition="0|0" />
+      <File id="282F44F3-FBB6-4B36-9370-6E25B336D718/f:ArtefactWithPropDef.txt" caret="176" scrollPosition="0|0" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/f:DomainModel.cs" caret="4430" scrollPosition="0|0" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Visitor/f:IVisitor.cs" caret="89" scrollPosition="0|0" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Visitor/f:IVisitable.cs" caret="94" scrollPosition="0|0" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:INode.cs" caret="106" scrollPosition="0|0" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:BaseNode.cs" caret="208" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:App.config" caret="2404" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:ModelBuilder.cs" caret="3265" scrollPosition="0|27" />
+      <File id="BC494A96-696E-46A5-A055-9C797FC07DC4/f:Logger.cs" caret="3838" scrollPosition="0|56" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:Ast.cs" caret="2566" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:sample-input.txt" caret="1027" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:DynamicParserExtensions.cs" caret="1285" scrollPosition="0|0" />
+      <File id="d:Miscellaneous Files/f:LDAPENUM.cs" caret="103" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="1617" scrollPosition="0|6" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:Ast.cs" caret="93" scrollPosition="0|0" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Visitor/f:IVisitor.cs" caret="58" scrollPosition="0|0" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Visitor/f:IVisitable.cs" caret="55" scrollPosition="0|0" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Visitor/f:IVisitable.cs" caret="94" scrollPosition="0|0" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:BaseNode.cs" caret="112" scrollPosition="0|0" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:BaseNode.cs" caret="122" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:DynamicParserExtensions.cs" caret="4546" scrollPosition="0|53" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="2703" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:DynamicParserExtensions.cs" caret="5461" scrollPosition="0|70" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="1112" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="2340" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="1265" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:App.config" caret="2418" scrollPosition="0|2" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:Ast.cs" caret="5969" scrollPosition="0|204" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:App.config" caret="335" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:App.config" caret="945" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:App.config" caret="1539" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:App.config" caret="2404" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="1112" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="1265" scrollPosition="0|0" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:Ast.cs" caret="2078" scrollPosition="0|53" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:Ast.cs" caret="2831" scrollPosition="0|87" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:Ast.cs" caret="3421" scrollPosition="0|113" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:Ast.cs" caret="2301" scrollPosition="0|0" />
+      <File id="B8ECCA66-8886-4A26-8373-F915902702E5/d:Ast/f:Ast.cs" caret="2566" scrollPosition="0|0" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:sample-input.txt" caret="6992" scrollPosition="0|177" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:sample-input.txt" caret="307" scrollPosition="0|10" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="876" scrollPosition="0|6" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="1265" scrollPosition="0|6" />
+      <File id="BF3956DA-20A4-4D95-9C2C-D2EA0D591B20/f:Program.cs" caret="2131" scrollPosition="0|6" />
+    </RecentEdits>
+  </RecentFiles>
+  <UnitTestRunner>
+    <CustomStartDirectory>
+    </CustomStartDirectory>
+    <UseShadowCopy>True</UseShadowCopy>
+    <UseCustomFolder>False</UseCustomFolder>
+    <EnableUnitTesting>True</EnableUnitTesting>
+    <Providers />
+  </UnitTestRunner>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="public" priority="0" />
+      <Item value="IComparable" priority="0" />
+      <Item value="PropertyDefinition" priority="1" />
+      <Item value="" priority="1" />
+      <Item value="Name" priority="0" />
+      <Item value="GraphBuilder" priority="1" />
+      <Item value="DefaultConstraint" priority="2" />
+      <Item value="PropertyType" priority="3" />
+      <Item value="AcceptableTypes" priority="0" />
+      <Item value="NotImplementedException" priority="0" />
+      <Item value="b" priority="0" />
+      <Item value="Artefact" priority="0" />
+      <Item value="PropertyDefinitions" priority="0" />
+      <Item value="List" priority="0" />
+      <Item value="Dataflow" priority="0" />
+      <Item value="Identifier" priority="0" />
+      <Item value="Console" priority="1" />
+      <Item value="LogWriter" priority="0" />
+      <Item value="StringWriter" priority="0" />
+      <Item value="StringBuilder" priority="0" />
+      <Item value="XamlWriterSettings" priority="0" />
+      <Item value="DomainModel" priority="0" />
+      <Item value="Ast" priority="0" />
+      <Item value="Architecture" priority="0" />
+      <Item value="errorReporter" priority="0" />
+      <Item value="ErrorReporter" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Dataflow.GraphBuilder">
+      <Item value="GetEntityLabel" priority="0" />
+      <Item value="GetSuccessors" priority="1" />
+      <Item value="TestLabel" priority="1" />
+      <Item value="GetSingleByLabel" priority="4" />
+      <Item value="ForEachSuccessor" priority="0" />
+      <Item value="VisitArtefacts" priority="0" />
+      <Item value="GetSequenceElements" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Object">
+      <Item value="ToString" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Where" priority="1" />
+      <Item value="SingleOrDefault" priority="0" />
+      <Item value="Cast" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@DomainModel.PropertyType">
+      <Item value="ObjectReference" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Diagnostics.Debug">
+      <Item value="Assert" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.String">
+      <Item value="TrimQuotes" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Ast.Visitor.IAstVisitor">
+      <Item value="CaseIdentifier" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Type">
+      <Item value="Assembly" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Console">
+      <Item value="Out" priority="1" />
+      <Item value="ReadKey" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@log4net.Config.XmlConfigurator">
+      <Item value="Configure" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Common.Logger">
+      <Item value="Debug" priority="0" />
+      <Item value="Info" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Text.StringBuilder">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Xml.Linq.XDocument">
+      <Item value="Parse" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Xml.Linq.XDocument">
+      <Item value="ToString" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Dataflow.DynamicParser">
+      <Item value="Parse" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Dataflow.ErrorReporter">
+      <Item value="Standard" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+</Configuration>
